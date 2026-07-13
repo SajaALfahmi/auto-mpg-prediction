@@ -104,7 +104,6 @@ The models were evaluated using:
 ├── auto_mpg_model.py
 ├── best_svr_model.pkl
 ├── scaler.pkl
-└── svr_predictions.csv
 ```
 
 
