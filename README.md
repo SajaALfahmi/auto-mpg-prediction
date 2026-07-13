@@ -4,11 +4,15 @@ A machine learning project that predicts vehicle fuel efficiency (Miles Per Gall
 
 The project covers the complete machine learning workflow, including data preprocessing, exploratory data analysis (EDA), model training, hyperparameter tuning, evaluation, and deployment through a Streamlit web application.
 
+## Application Preview
+
+![Application Preview](app.jpg)
+
 ---
 
 ## Project Overview
 
-Fuel efficiency is influenced by multiple vehicle characteristics such as engine size, horsepower, weight, and model year. Estimating fuel consumption manually can be inaccurate, so this project applies Machine Learning techniques to predict a vehicle's MPG based on its technical specifications.
+Fuel efficiency is influenced by multiple vehicle characteristics such as engine size, horsepower, weight, and model year. Estimating fuel consumption manually can be inaccurate, so this project applies machine learning techniques to predict a vehicle's MPG based on its technical specifications.
 
 The project compares two regression algorithms and deploys the best-performing model as an interactive web application.
 
@@ -88,38 +92,21 @@ The models were evaluated using:
 
 ---
 
-## Application Preview
-
-### Home Screen
-
-![Home](screenshots/home.png)
-
----
-
-### Input Parameters
-
-![Input](screenshots/input.png)
-
----
-
-### Prediction Result
-
-![Prediction](screenshots/prediction.png)
-
----
-
 ## Repository Structure
 
 ```text
 .
-├── auto_mpg_model.ipynb
-├── auto_mpg_model.py
+├── README.md
+├── app.jpg
 ├── app.py
 ├── auto-mpg.csv
-├── requirements.txt
-├── README.md
-└── screenshots/
+├── auto_mpg_model.ipynb
+├── auto_mpg_model.py
+├── best_svr_model.pkl
+├── scaler.pkl
+└── svr_predictions.csv
 ```
+
 
 ---
 
@@ -157,6 +144,6 @@ streamlit run app.py
 
 ---
 
-## 📄 License
+## License
 
 This project was developed for educational purposes.
