@@ -158,8 +158,8 @@ streamlit run app.py
 
 This project was developed as a team project by:
 
-* Saja Alfahmi
-* Rayanah Alotaibi
-* Lama Alqarni
-* Arwa Alroqi
+Saja Nashi Al-Fahmi
+Arwa Fahd Al-Roqi
+Lama Saleh Al-Qarni
+Rayana Samer Al-Otaibi
 
