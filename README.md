@@ -1,16 +1,24 @@
-# Auto MPG Prediction using Machine Learning
+# Fuel Efficiency Prediction Using Machine Learning
 
-##  Overview
+A machine learning project that predicts vehicle fuel efficiency (Miles Per Gallon - MPG) using regression models and real-world vehicle data.
 
-This project predicts a vehicle's fuel efficiency (Miles Per Gallon - MPG) using Machine Learning regression models. The objective is to analyze the relationship between vehicle characteristics and fuel efficiency, then build predictive models capable of estimating MPG for unseen data.
-
-The project includes data preprocessing, exploratory data analysis (EDA), model training, hyperparameter tuning, evaluation, and deployment using Streamlit.
+The project covers the complete machine learning workflow, including data preprocessing, exploratory data analysis (EDA), model training, hyperparameter tuning, evaluation, and deployment through a Streamlit web application.
 
 ---
 
-##  Dataset
+## Project Overview
 
-The project uses the **Auto MPG** dataset, which contains various vehicle specifications, including:
+Fuel efficiency is influenced by multiple vehicle characteristics such as engine size, horsepower, weight, and model year. Estimating fuel consumption manually can be inaccurate, so this project applies Machine Learning techniques to predict a vehicle's MPG based on its technical specifications.
+
+The project compares two regression algorithms and deploys the best-performing model as an interactive web application.
+
+---
+
+## Dataset
+
+**Dataset:** Auto MPG Dataset
+
+### Features
 
 * Cylinders
 * Displacement
@@ -20,7 +28,7 @@ The project uses the **Auto MPG** dataset, which contains various vehicle specif
 * Model Year
 * Origin
 
-**Target Variable:**
+### Target
 
 * MPG (Miles Per Gallon)
 
@@ -28,51 +36,30 @@ The project uses the **Auto MPG** dataset, which contains various vehicle specif
 
 ## Project Workflow
 
-1. Data Cleaning
-
-   * Replaced missing values
-   * Converted data types
-   * Removed unnecessary columns
-
-2. Exploratory Data Analysis (EDA)
-
-   * Feature distributions
-   * Correlation heatmap
-   * Scatter plots
-
-3. Data Preprocessing
-
-   * Train/Test split
-   * Feature scaling using StandardScaler
-
-4. Model Training
-
-   * Linear Regression
-   * Support Vector Regression (SVR)
-
-5. Hyperparameter Tuning
-
-   * GridSearchCV
-
-6. Model Evaluation
-
-   * Mean Absolute Error (MAE)
-   * Root Mean Squared Error (RMSE)
-   * R² Score
-   * Cross Validation
-
-7. Deployment
-
-   * Saved the best model using Pickle
-   * Developed a Streamlit web application for predictions
+* Data Cleaning
+* Exploratory Data Analysis (EDA)
+* Feature Scaling using StandardScaler
+* Train/Test Split (80/20)
+* Linear Regression
+* Support Vector Regression (SVR)
+* Hyperparameter Tuning using GridSearchCV
+* Model Evaluation
+* Model Serialization using Pickle
+* Streamlit Deployment
 
 ---
 
 ## Machine Learning Models
 
-* Linear Regression
-* Support Vector Regression (SVR)
-* GridSearchCV for Hyperparameter Optimization
+### Linear Regression
+
+Used as the baseline regression model.
+
+### Support Vector Regression (SVR)
+
+Used to capture non-linear relationships between vehicle features and fuel efficiency.
+
+The model's hyperparameters were optimized using **GridSearchCV**, and the tuned SVR model achieved the best overall performance.
 
 ---
 
@@ -80,8 +67,8 @@ The project uses the **Auto MPG** dataset, which contains various vehicle specif
 
 The models were evaluated using:
 
-* MAE (Mean Absolute Error)
-* RMSE (Root Mean Squared Error)
+* Mean Absolute Error (MAE)
+* Root Mean Squared Error (RMSE)
 * R² Score
 * Cross Validation
 
@@ -105,19 +92,26 @@ The models were evaluated using:
 
 ### Home Screen
 
-*(Add your screenshot here)*
-
-### Prediction Result
-
-*(Add your screenshot here)*
+![Home](screenshots/home.png)
 
 ---
 
-## Project Structure
+### Input Parameters
+
+![Input](screenshots/input.png)
+
+---
+
+### Prediction Result
+
+![Prediction](screenshots/prediction.png)
+
+---
+
+## Repository Structure
 
 ```text
-auto-mpg-prediction/
-│
+.
 ├── auto_mpg_model.ipynb
 ├── auto_mpg_model.py
 ├── app.py
@@ -129,9 +123,9 @@ auto-mpg-prediction/
 
 ---
 
-## Run the Project
+## Running the Project
 
-Install the required packages:
+Install the required libraries:
 
 ```bash
 pip install -r requirements.txt
@@ -145,21 +139,24 @@ streamlit run app.py
 
 ---
 
-## Future Improvements
+## Team
 
-* Add more regression models for comparison.
-* Improve the Streamlit interface.
-* Perform feature engineering to enhance model performance.
-* Deploy the application online.
+* Saja Al-Fahmi
+* Rayana Al-Otaibi
+* Lama Al-Qarni
+* Arwa Al-Roqi
 
 ---
 
-## 👥 Team
+## Future Improvements
 
-This project was developed as a team project by:
+* Apply feature engineering techniques.
+* Experiment with additional regression models such as Random Forest and XGBoost.
+* Improve the Streamlit interface.
+* Deploy the application online using Streamlit Community Cloud.
 
-* Saja Nashi Al-Fahmi
-* Arwa Fahd Al-Roqi
-* Lama Saleh Al-Qarni
-* Rayana Samer Al-Otaibi
+---
 
+## 📄 License
+
+This project was developed for educational purposes.
